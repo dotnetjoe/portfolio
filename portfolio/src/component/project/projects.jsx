@@ -1,7 +1,7 @@
 import { Typography } from '@material-ui/core';
 import React from 'react';
 import { Container, Grid, makeStyles } from '@material-ui/core';
-import image from '../images/asd.jpg'
+import image from '../images/download.jpg'
 const useStyles = makeStyles((theme) => ({
     Projects: {
         display: 'flex',
@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: "30px"
     },
     ProjectImage: {
-        width: '100%'
+        width: '100%',
+        boxShadow:"0 0 30px rgb(0 0 0 / 40%)"
     },
     ProjectHeader: {
         margin: '50px',
@@ -33,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
         margin: '20px',
         textAlign: 'center',
         fontFamily: "Yomogi, cursive"
-    }
+    },
 
 }))
 
