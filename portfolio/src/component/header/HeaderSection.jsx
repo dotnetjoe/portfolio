@@ -3,6 +3,7 @@ import { makeStyles, Typography, Box } from '@material-ui/core';
 //import { Container } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import image from '../images/image.jpg'
+import profile from '../images/profile.jpg'
 const useStyles = makeStyles(() => ({
     header: {
         width: '100%',
@@ -44,7 +45,9 @@ export default function HeaderSection() {
         <>
             <Box className={classes.Container}>
                 <Box className={classes.header}>
+
                     <div className={classes.headerChild}>
+                        <img src={profile} style={{width:'200px', borderRadius:'50%', border:'4px solid black'}} alt="" />
                         <Typography variant="h4" className={classes.Typography}>
                             Muahmmad Zubair
                         </Typography>

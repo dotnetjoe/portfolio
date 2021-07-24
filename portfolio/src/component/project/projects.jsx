@@ -1,7 +1,9 @@
 import { Typography } from '@material-ui/core';
 import React from 'react';
 import { Container, Grid, makeStyles } from '@material-ui/core';
-import image from '../images/download.jpg'
+import project1 from '../images/project1.PNG'
+import project2 from '../images/project2.PNG'
+import project3 from '../images/project3.jpg'
 const useStyles = makeStyles((theme) => ({
     Projects: {
         display: 'flex',
@@ -51,25 +53,25 @@ export default function Project() {
                         </Typography>
                     </Grid>
                     <Grid item xl={3} lg={6} md={6} sm={6} xs={12}>
-                        <img className={classes.ProjectImage} src={image} alt="" />
+                        <img className={classes.ProjectImage} src={project1} alt="" />
                         <Typography className={classes.ProjectHeading} component="h2" variant="h5">
                             Project 01
                         </Typography>
                     </Grid>
                     <Grid item xl={3} lg={6} md={6} sm={6} xs={12}>
-                        <img className={classes.ProjectImage} src={image} alt="" />
+                        <img className={classes.ProjectImage} src={project3} alt="" />
                         <Typography className={classes.ProjectHeading} component="h2" variant="h5">
                             Project 01
                         </Typography>
                     </Grid>
                     <Grid item xl={3} lg={6} md={6} sm={6} xs={12}>
-                        <img className={classes.ProjectImage} src={image} alt="" />
+                        <img className={classes.ProjectImage} src={project3} alt="" />
                         <Typography className={classes.ProjectHeading} component="h2" variant="h5">
                             Project 01
                         </Typography>
                     </Grid>
                     <Grid item xl={3} lg={6} md={6} sm={6} xs={12}>
-                        <img className={classes.ProjectImage} src={image} alt="" />
+                        <img className={classes.ProjectImage} src={project2} alt="" />
                         <Typography className={classes.ProjectHeading} component="h2" variant="h5">
                             Project 01
                         </Typography>

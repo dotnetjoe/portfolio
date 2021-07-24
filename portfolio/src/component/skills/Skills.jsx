@@ -1,6 +1,16 @@
 import { Typography } from '@material-ui/core';
 import React from 'react';
 import { Container, Grid, makeStyles, Box } from '@material-ui/core';
+import HTML from '../images/html.png'
+import CSS from '../images/css.png'
+import JS from '../images/js.png'
+import ReactJS from '../images/react.png'
+import nodeJS from '../images/node_js.png'
+import expressJs from '../images/express.png'
+import mongoDB from '../images/mongodb.png'
+import materialUI from '../images/material-ui.png'
+import bootstrap from '../images/bootstrap.png'
+import reactBootstrap from '../images/react-bootstrap.png'
 
 const useStyles = makeStyles((theme) => ({
 
@@ -46,6 +56,9 @@ const useStyles = makeStyles((theme) => ({
         // backgroundColor:'linear-gradient(rgba(5, 5, 5, 0.9), rgba(5, 5, 5, 0.9)))'
         // color:'linear-gradient(rgba(5, 5, 5, 0.9), rgba(5, 5, 5, 0.9)))'
 
+    },
+    skillImage: {
+        width: "25%"
     }
 
 }))
@@ -64,9 +77,12 @@ export default function Skills() {
                                 Skill Experties
                             </Typography>
                         </Grid>
+
                         <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
                             <Box className={classes.skillTextAlignment}>
-                                <i className={`fab fa-html5 ${classes.fontIcon}`}></i>
+                            <Box>
+                                <img className={classes.skillImage} src={HTML} alt="" />
+                            </Box>
 
                                 <Typography component="h4" variant="h4">
                                     HTML5
@@ -85,7 +101,9 @@ export default function Skills() {
                         </Grid>
                         <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
                             <Box className={classes.skillTextAlignment}>
-                                <i class="fab fa-css3-alt"></i>
+                            <Box>
+                                <img className={classes.skillImage} src={CSS} alt="" />
+                            </Box>
                                 <Typography component="h4" variant="h4">
                                     CSS3
                                 </Typography>
@@ -102,7 +120,9 @@ export default function Skills() {
                         </Grid>
                         <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
                             <Box className={classes.skillTextAlignment}>
-                                <i class="fab fa-js"></i>
+                            <Box>
+                                <img className={classes.skillImage} src={JS} alt="" />
+                            </Box>
                                 <Typography component="h4" variant="h4">
                                     JavaScript
                                 </Typography>
@@ -119,7 +139,9 @@ export default function Skills() {
                         </Grid>
                         <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
                             <Box className={classes.skillTextAlignment}>
-                                <i class="fab fa-react"></i>
+                            <Box>
+                                <img className={classes.skillImage} src={ReactJS} alt="" />
+                            </Box>
                                 <Typography component="h4" variant="h4">
                                     React.Js
                                 </Typography>
@@ -133,7 +155,9 @@ export default function Skills() {
                         </Grid>
                         <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
                             <Box className={classes.skillTextAlignment}>
-                                <i class="fab fa-node"></i>
+                            <Box>
+                                <img style={{margin:'10px 0px'}} className={classes.skillImage} src={nodeJS} alt="" />
+                            </Box>
                                 <Typography component="h4" variant="h4">
                                     Node.Js
                                 </Typography>
@@ -150,6 +174,9 @@ export default function Skills() {
                         </Grid>
                         <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
                             <Box className={classes.skillTextAlignment}>
+                            <Box>
+                                <img style={{marginBottom:'15px', width:"250px"}} className={classes.skillImage} src={expressJs} alt="" />
+                            </Box>
                                 <Typography component="h4" variant="h4">
                                     Express.JS
                                 </Typography>
@@ -166,7 +193,9 @@ export default function Skills() {
                         </Grid>
                         <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
                             <Box className={classes.skillTextAlignment}>
-                                <i class="fab fa-mdb"></i>
+                            <Box>
+                                <img className={classes.skillImage} src={mongoDB} alt="" />
+                            </Box>
                                 <Typography component="h4" variant="h4">
                                     MongoDB
                                 </Typography>
@@ -183,6 +212,9 @@ export default function Skills() {
                         </Grid>
                         <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
                             <Box className={classes.skillTextAlignment}>
+                            <Box>
+                                <img className={classes.skillImage} src={materialUI} alt="" />
+                            </Box>
                                 <Typography component="h4" variant="h4">
                                     Material-UI
                                 </Typography>
@@ -199,7 +231,9 @@ export default function Skills() {
                         </Grid>
                         <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
                             <Box className={classes.skillTextAlignment}>
-                                <i class="fab fa-bootstrap"></i>
+                            <Box>
+                                <img className={classes.skillImage} src={bootstrap} alt="" />
+                            </Box>
                                 <Typography component="h4" variant="h4">
                                     BootStrap
                                 </Typography>
@@ -215,7 +249,9 @@ export default function Skills() {
                         </Grid>
                         <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
                             <Box className={classes.skillTextAlignment}>
-                                <i class="fab fa-bootstrap"></i>
+                            <Box>
+                                <img className={classes.skillImage} src={reactBootstrap} alt="" />
+                            </Box>
                                 <Typography component="h4" variant="h4">
                                     React-Bootstrap
                                 </Typography>
