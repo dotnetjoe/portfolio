@@ -4,7 +4,7 @@ import { TextareaAutosize, TextField, Button } from '@material-ui/core';
 export default function Contact() {
     return (
         <>
-            <Box style={{ background: '#191919' }}>
+            <Box style={{ background: '#191919' }} id="ContactUs">
                 <Grid container >
                     <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
                         <Typography>

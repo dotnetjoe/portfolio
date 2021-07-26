@@ -10,14 +10,18 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import Hidden from '@material-ui/core/Hidden';
 import { Box } from '@material-ui/core';
+import scrollTo from 'gatsby-plugin-smoothscroll';
+// import HeaderSection from '../header/HeaderSection';
+// import Project from '../project/projects';
+// import Skills from '../skills/Skills';
+// import Contact from '../contact/Contact';
+
+
 const drawerWidth = 240;
-
-
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -96,12 +100,14 @@ export default function Navbar() {
                     <Toolbar>
 
                         <Typography variant="h6" className={classes.title}>
-                            News
+                            Muhammad Zubair
                         </Typography>
-                        <Button color="inherit">Login</Button>
-                        <Button color="inherit">Login</Button>
-                        <Button color="inherit">Login</Button>
-                        <Button color="inherit">Login</Button>
+                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#Home')}> Home</Button>
+                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#Skills')}> Skill</Button>
+                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#Project')}> Projects</Button>
+                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#SocialSites')}> Social Sites</Button>
+                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#ContactUs')}> Contact Us</Button>
+
                     </Toolbar>
                 </AppBar>
             </Box>
@@ -142,19 +148,12 @@ export default function Navbar() {
                             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                         </IconButton>
                     </div>
-                    <Divider />
                     <List>
-                        <Button>HOme</Button>
-                        <Button>HOme</Button>
-                        <Button>HOme</Button>
-                        <Button>HOme</Button>
-                    </List>
-                    <Divider />
-                    <List>
-                        <Button>HOme</Button>
-                        <Button>HOme</Button>
-                        <Button>HOme</Button>
-                        <Button>HOme</Button>
+                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#Home')}> Home</Button>
+                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#Skills')}>Skills</Button>
+                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#Project')}> Project</Button>
+                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#SocialSites')}> Social Sites</Button>
+                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#ContactUs')}> Contact Us</Button>
                     </List>
                 </Drawer>
             </Box>

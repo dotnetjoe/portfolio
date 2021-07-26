@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Grid, Typography, Box } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
 import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.png';
 import github from '../images/github.png';
 import linkedin from '../images/linkedin.png';
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const useStyles = makeStyles((theme) => ({
 
     SocialLinkBox: {
@@ -45,55 +46,58 @@ const useStyles = makeStyles((theme) => ({
 }))
 export default function SocialLink() {
     const classes = useStyles()
+    useEffect(() => {
+        Aos.init()
+    }, [])
     return (
         <>
-            <Container>
+            <Container id="SocialSites">
                 <Grid container>
                     <Grid item xs={12}>
                         <Typography className={classes.ProjectHeader} component="h2" variant="h2">
                             Social Activities
                         </Typography>
                     </Grid>
-                    <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
+                    <Grid item xl={6} lg={6} md={6} sm={12} xs={12} data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <Box className={classes.SocialLinkBox}>
 
                             <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                 <img className={classes.skillImage} src={facebook} alt="" />
                                 <Typography className={classes.Typography} component="h4" variant="subtitled">
-                                    Hello world
+                                    Muhammad Zubair
                                 </Typography>
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
+                    <Grid item xl={6} lg={6} md={6} sm={12} xs={12} data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <Box className={classes.SocialLinkBox}>
 
                             <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                 <img className={classes.skillImage} src={instagram} alt="" />
                                 <Typography className={classes.Typography} component="h4" variant="subtitled">
-                                    Hello world
+                                    instagram.com/zubair12369
                                 </Typography>
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
+                    <Grid item xl={6} lg={6} md={6} sm={12} xs={12} data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <Box className={classes.SocialLinkBox}>
 
                             <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                 <img className={classes.skillImage} src={github} alt="" />
                                 <Typography className={classes.Typography} component="h4" variant="subtitled">
-                                    Hello world
+                                    github.com/zubairkhan1234
                                 </Typography>
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
+                    <Grid item xl={6} lg={6} md={6} sm={12} xs={12} data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <Box className={classes.SocialLinkBox}>
 
                             <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                 <img className={classes.skillImage} src={linkedin} alt="" />
                                 <Typography className={classes.Typography} component="h4" variant="subtitled">
-                                    Hello world
+                                    Muahmmad Zubair
                                 </Typography>
                             </Box>
                         </Box>

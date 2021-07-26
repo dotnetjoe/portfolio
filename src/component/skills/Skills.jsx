@@ -1,5 +1,5 @@
 import { Typography } from '@material-ui/core';
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Container, Grid, makeStyles, Box } from '@material-ui/core';
 import HTML from '../images/html.png'
 import CSS from '../images/css.png'
@@ -11,6 +11,8 @@ import mongoDB from '../images/mongodb.png'
 import materialUI from '../images/material-ui.png'
 import bootstrap from '../images/bootstrap.png'
 import reactBootstrap from '../images/react-bootstrap.png'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const useStyles = makeStyles((theme) => ({
 
@@ -66,9 +68,12 @@ const useStyles = makeStyles((theme) => ({
 export default function Skills() {
     const classes = useStyles()
     console.log(classes)
+    useEffect(() => {
+        Aos.init()
+    }, [])
     return (
         <>
-            <Box className={classes.Container}>
+            <Box className={classes.Container} id="Skills">
 
                 <Container>
                     <Grid container spacing={3} >
@@ -78,11 +83,11 @@ export default function Skills() {
                             </Typography>
                         </Grid>
 
-                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
+                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
                             <Box className={classes.skillTextAlignment}>
-                            <Box>
-                                <img className={classes.skillImage} src={HTML} alt="" />
-                            </Box>
+                                <Box>
+                                    <img className={classes.skillImage} src={HTML} alt="" />
+                                </Box>
 
                                 <Typography component="h4" variant="h4">
                                     HTML5
@@ -99,11 +104,11 @@ export default function Skills() {
 
                             </Box>
                         </Grid>
-                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
+                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
                             <Box className={classes.skillTextAlignment}>
-                            <Box>
-                                <img className={classes.skillImage} src={CSS} alt="" />
-                            </Box>
+                                <Box>
+                                    <img className={classes.skillImage} src={CSS} alt="" />
+                                </Box>
                                 <Typography component="h4" variant="h4">
                                     CSS3
                                 </Typography>
@@ -118,11 +123,11 @@ export default function Skills() {
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
+                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
                             <Box className={classes.skillTextAlignment}>
-                            <Box>
-                                <img className={classes.skillImage} src={JS} alt="" />
-                            </Box>
+                                <Box>
+                                    <img className={classes.skillImage} src={JS} alt="" />
+                                </Box>
                                 <Typography component="h4" variant="h4">
                                     JavaScript
                                 </Typography>
@@ -137,11 +142,11 @@ export default function Skills() {
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
+                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
                             <Box className={classes.skillTextAlignment}>
-                            <Box>
-                                <img className={classes.skillImage} src={ReactJS} alt="" />
-                            </Box>
+                                <Box>
+                                    <img className={classes.skillImage} src={ReactJS} alt="" />
+                                </Box>
                                 <Typography component="h4" variant="h4">
                                     React.Js
                                 </Typography>
@@ -153,11 +158,11 @@ export default function Skills() {
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
+                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
                             <Box className={classes.skillTextAlignment}>
-                            <Box>
-                                <img style={{margin:'10px 0px'}} className={classes.skillImage} src={nodeJS} alt="" />
-                            </Box>
+                                <Box>
+                                    <img style={{ margin: '10px 0px' }} className={classes.skillImage} src={nodeJS} alt="" />
+                                </Box>
                                 <Typography component="h4" variant="h4">
                                     Node.Js
                                 </Typography>
@@ -172,11 +177,11 @@ export default function Skills() {
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
+                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
                             <Box className={classes.skillTextAlignment}>
-                            <Box>
-                                <img style={{marginBottom:'15px', width:"250px"}} className={classes.skillImage} src={expressJs} alt="" />
-                            </Box>
+                                <Box>
+                                    <img style={{ marginBottom: '15px', width: "250px" }} className={classes.skillImage} src={expressJs} alt="" />
+                                </Box>
                                 <Typography component="h4" variant="h4">
                                     Express.JS
                                 </Typography>
@@ -191,11 +196,11 @@ export default function Skills() {
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
+                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
                             <Box className={classes.skillTextAlignment}>
-                            <Box>
-                                <img className={classes.skillImage} src={mongoDB} alt="" />
-                            </Box>
+                                <Box>
+                                    <img className={classes.skillImage} src={mongoDB} alt="" />
+                                </Box>
                                 <Typography component="h4" variant="h4">
                                     MongoDB
                                 </Typography>
@@ -210,11 +215,11 @@ export default function Skills() {
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
+                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
                             <Box className={classes.skillTextAlignment}>
-                            <Box>
-                                <img className={classes.skillImage} src={materialUI} alt="" />
-                            </Box>
+                                <Box>
+                                    <img className={classes.skillImage} src={materialUI} alt="" />
+                                </Box>
                                 <Typography component="h4" variant="h4">
                                     Material-UI
                                 </Typography>
@@ -229,11 +234,11 @@ export default function Skills() {
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
+                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
                             <Box className={classes.skillTextAlignment}>
-                            <Box>
-                                <img className={classes.skillImage} src={bootstrap} alt="" />
-                            </Box>
+                                <Box>
+                                    <img className={classes.skillImage} src={bootstrap} alt="" />
+                                </Box>
                                 <Typography component="h4" variant="h4">
                                     BootStrap
                                 </Typography>
@@ -247,11 +252,11 @@ export default function Skills() {
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
+                        <Grid item xl={4} lg={4} md={4} sm={6} xs={12} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000">
                             <Box className={classes.skillTextAlignment}>
-                            <Box>
-                                <img className={classes.skillImage} src={reactBootstrap} alt="" />
-                            </Box>
+                                <Box>
+                                    <img className={classes.skillImage} src={reactBootstrap} alt="" />
+                                </Box>
                                 <Typography component="h4" variant="h4">
                                     React-Bootstrap
                                 </Typography>

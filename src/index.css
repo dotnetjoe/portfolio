@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
     padding: 0;
     font-family: 'Otomanopee One', sans-serif;
+    scroll-behavior: smooth;
 
 }
 
