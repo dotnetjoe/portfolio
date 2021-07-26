@@ -4,6 +4,7 @@ import { Container, Grid, makeStyles } from '@material-ui/core';
 import project1 from '../images/project1.PNG'
 import project2 from '../images/project2.PNG'
 import project3 from '../images/project3.jpg'
+import project4 from '../images/project4.PNG'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 const useStyles = makeStyles((theme) => ({
@@ -70,7 +71,7 @@ export default function Project() {
                         </Typography>
                     </Grid>
                     <Grid item xl={3} lg={6} md={6} sm={6} xs={12} data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <img className={classes.ProjectImage} src={project3} alt="" />
+                        <img className={classes.ProjectImage} src={project4} alt="" />
                         <Typography className={classes.ProjectHeading} component="h2" variant="h5">
                             local image
                         </Typography>
