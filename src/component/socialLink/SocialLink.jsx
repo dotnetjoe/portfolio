@@ -64,7 +64,7 @@ export default function SocialLink() {
                             <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                 <img className={classes.skillImage} src={facebook} alt="" />
                                 <Typography className={classes.Typography} component="h4" variant="subtitled">
-                                    Muhammad Zubair
+                                    Ronaldo Morais
                                 </Typography>
                             </Box>
                         </Box>
@@ -75,7 +75,7 @@ export default function SocialLink() {
                             <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                 <img className={classes.skillImage} src={instagram} alt="" />
                                 <Typography className={classes.Typography} component="h4" variant="subtitled">
-                                    instagram.com/zubair12369
+                                    instagram.com/ronaldogdm
                                 </Typography>
                             </Box>
                         </Box>
@@ -86,7 +86,7 @@ export default function SocialLink() {
                             <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                 <img className={classes.skillImage} src={github} alt="" />
                                 <Typography className={classes.Typography} component="h4" variant="subtitled">
-                                    github.com/zubairkhan1234
+                                    github.com/ronaldogdm
                                 </Typography>
                             </Box>
                         </Box>
@@ -97,7 +97,7 @@ export default function SocialLink() {
                             <Box style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                                 <img className={classes.skillImage} src={linkedin} alt="" />
                                 <Typography className={classes.Typography} component="h4" variant="subtitled">
-                                    Muahmmad Zubair
+                                    Ronaldo Morais
                                 </Typography>
                             </Box>
                         </Box>

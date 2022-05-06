@@ -100,13 +100,13 @@ export default function Navbar() {
                     <Toolbar>
 
                         <Typography variant="h6" className={classes.title}>
-                            Muhammad Zubair
+                                Ronaldo Morais
                         </Typography>
                         <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#Home')}> Home</Button>
                         <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#Skills')}> Skill</Button>
                         <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#Project')}> Projects</Button>
                         <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#SocialSites')}> Social Sites</Button>
-                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#ContactUs')}> Contact Us</Button>
+                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#ContactUs')}> Contact Me</Button>
 
                     </Toolbar>
                 </AppBar>
@@ -153,7 +153,7 @@ export default function Navbar() {
                         <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#Skills')}>Skills</Button>
                         <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#Project')}> Project</Button>
                         <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#SocialSites')}> Social Sites</Button>
-                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#ContactUs')}> Contact Us</Button>
+                        <Button style={{ color: "white", fontWeight: '500', }} onClick={() => scrollTo('#ContactUs')}> Contact Me</Button>
                     </List>
                 </Drawer>
             </Box>

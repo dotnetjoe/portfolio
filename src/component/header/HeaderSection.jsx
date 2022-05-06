@@ -3,7 +3,8 @@ import { makeStyles, Typography, Box } from '@material-ui/core';
 //import { Container } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import image from '../images/image.jpg'
-import profile from '../images/profile.jpg'
+import profile from '../images/profile.png'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -56,12 +57,12 @@ export default function HeaderSection() {
                         <Box data-aos="zoom-in-down" data-aos-duration="1500">
 
                             <Typography variant="h4" className={classes.Typography} >
-                                Muahmmad Zubair
+                                Ronaldo Morais
                             </Typography>
                             <Typography variant="h5" className={classes.Typography} >
-                                Wellcome Here
+                                Welcome Here
                             </Typography>
-                            <Button className={classes.button} variant="contained" href="#contained-buttons" >
+                            <Button className={classes.button} variant="contained" href="#contained-buttons" onClick={() => scrollTo('#Project')}>
                                 See All project
                             </Button>
                         </Box>

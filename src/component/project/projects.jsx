@@ -6,6 +6,7 @@ import project2 from '../images/project2.PNG'
 import project3 from '../images/project3.jpg'
 import project4 from '../images/project4.PNG'
 import Aos from 'aos'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import 'aos/dist/aos.css'
 const useStyles = makeStyles((theme) => ({
     Projects: {
@@ -54,7 +55,7 @@ export default function Project() {
             <Container id="Project">
                 <Grid container spacing={3}>
                     <Grid item xs={12}>
-                        <Typography className={classes.ProjectHeader} component="h2" variant="h2">
+                        <Typography className={classes.ProjectHeader} component="h2" variant="h2" onClick={() => scrollTo('#Project')}>
                             See All Projects
                         </Typography>
                     </Grid>
